@@ -91,4 +91,12 @@ class ProviderDataCollector implements DataCollectorInterface, \Serializable
     {
         return 'url_shortener';
     }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function reset ()
+    {
+        $this->providers = array();
+    }
 }
